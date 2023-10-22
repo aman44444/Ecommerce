@@ -1,32 +1,32 @@
 import React from 'react';
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
+    <footer className="bg-gray-800 text-white p-4">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold">My E-commerce Site</h1>
+            <p>&copy; {new Date().getFullYear()} My E-commerce Site</p>
           </div>
           <div>
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <a href="/">Home</a>
+                  <a href="/about">About Us</a>
                 </li>
                 <li>
-                  <a href="/products">Products</a>
+                  <a href="/contact">Contact Us</a>
                 </li>
                 <li>
-                  <a href="/cart">Cart</a>
+                  <a href="/privacy-policy">Privacy Policy</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
